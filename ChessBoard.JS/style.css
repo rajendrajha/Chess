@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#myBoard {
+    max-width: 100%;
+    /* Set maximum width to 100% */
+    width: 500px;
+    /* Default width */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20vw;
+    height: 90dvh;
+    margin-left: 30px;
+    background-color: rgb(19, 19, 80);
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.d {
+    overflow-wrap: break-word;
+}
+@media screen and (max-width: 700px) {
+    #myBoard {
+        width: 500px;
+        margin-left: 0;
+        /* Adjust as needed for smaller screens */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #myBoard {
+        width: 300px;
+        margin-left: 0;
+        /* Adjust as needed for smaller screens */
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+    #myBoard {
+        width: 270px;
+        margin-left: 0;
+        /* Adjust as needed for smaller screens */
+    }
+}
